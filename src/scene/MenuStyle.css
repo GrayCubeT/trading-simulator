@@ -1,0 +1,13 @@
+.tab *.tab-label {
+	-fx-rotate: 90;
+}
+.vTabPane {
+	-fx-tab-pref-width:55;    
+	-fx-tab-pref-height:110;        
+}
+#top-pane-1 {
+	-fx-background-color: rgba(0, 0, 0, 0); 
+}
+#top-pane-2 {
+	-fx-background-color: rgba(0, 0, 100, 0);
+}

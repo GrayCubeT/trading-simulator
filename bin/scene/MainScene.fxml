@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="409.0" prefWidth="569.0" stylesheets="@MenuStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.MainSceneController">
+   <children>
+      <BorderPane layoutX="188.0" layoutY="57.0" prefHeight="409.0" prefWidth="359.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TabPane fx:id="MainTabPane" prefHeight="385.0" prefWidth="656.0" rotateGraphic="true" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="110.0" tabMaxWidth="55.0" tabMinHeight="110.0" tabMinWidth="55.0" BorderPane.alignment="CENTER">
+              <tabs>
+                	<Tab id="play-label" closable="false" text="Play">
+                	  <content>
+                      <AnchorPane fx:id="PlayPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                	  </content>
+                	</Tab>
+                  <Tab closable="false" text="News">
+                    <content>
+                      <AnchorPane fx:id="NewsPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab closable="false" text="Profile">
+                    <content>
+                      <AnchorPane fx:id="ProfilePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab closable="false" text="Learn">
+                    <content>
+                      <AnchorPane fx:id="LearnPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                <Tab closable="false" text="Options">
+                  <content>
+                    <AnchorPane fx:id="OptionsPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="170.0" layoutY="85.0" minViewportHeight="400.0" pannable="true" prefViewportHeight="400.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <content>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.20000000000005" minWidth="10.0" prefWidth="269.20001220703125" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.00003662109378" minWidth="0.0" prefWidth="72.19998779296873" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.4000549316406" minWidth="10.0" prefWidth="178.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                             <children>
+                                                <Label fx:id="option1_label" layoutX="14.0" layoutY="8.0" prefHeight="30.4" prefWidth="74.4" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="8.0" prefHeight="30.4" prefWidth="74.4" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <children>
+                                                <Label layoutY="7.0" prefHeight="30.4" prefWidth="74.4" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <children>
+                                                <ToggleButton layoutX="22.0" layoutY="4.0" mnemonicParsing="false" prefHeight="30.4" prefWidth="180.0" text="ToggleButton" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <children>
+                                                <Slider blockIncrement="1.0" layoutX="20.0" layoutY="7.0" prefHeight="14.4" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.999999999999999" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                             <children>
+                                                <Slider fx:id="option1_control" blockIncrement="1.0" layoutX="14.0" layoutY="8.0" prefHeight="14.4" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.999999999999999" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="86.0" layoutY="5.0" prefHeight="30.4" prefWidth="269.6" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <Label layoutX="99.0" layoutY="6.0" prefHeight="30.4" prefWidth="269.6" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                             <children>
+                                                <Label layoutX="94.0" layoutY="1.0" prefHeight="30.4" prefWidth="269.6" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </GridPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+         <top>
+            <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="126.0" prefWidth="570.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="126.4" prefWidth="569.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxHeight="25.0" minHeight="25.0" pannable="true" prefHeight="30.4" prefViewportHeight="25.0" prefWidth="569.6" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.4" prefWidth="359.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Text fx:id="tipsText" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPSTIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPSTIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPSTIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS TIPS" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets left="5.0" />
+                                                   </StackPane.margin>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane id="top-pane-2">
+                           <children>
+                              <StackPane prefHeight="30.4" prefWidth="354.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="btnExit" mnemonicParsing="false" prefHeight="42.0" prefWidth="60.0" text="Exit" StackPane.alignment="CENTER_RIGHT" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <StackPane.margin>
+                              <Insets left="5.0" />
+                           </StackPane.margin>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
